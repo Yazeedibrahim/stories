@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <style>
+    #li{
+        background:white;
+            color: black;
+            width: 100px;
+            height: 50px;
+            border-color: aliceblue;
+        
+    }
+    #mo{
+        background:black;
+            color:white;
+            width: 100px;
+            height: 50px;
+            
+    }
+        
+        
+        body{
+            text-align: center;
+            font-size: 2em;
+        }
+        h1{
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+b{
+    color: red;
+    font-size: 3em;
+}
+button{
+    height: 50px;
+    font-size:20px;
+    color: red;
+    text-transform: uppercase;
+    transition: 2s;
+    animation:anime 2s infinite;
+}
+@keyframes anime{
+    0%{
+    border-color: pink;
+    }
+    50%{
+     border-color: blue;
+    }
+    100%{
+ border-color: purple;
+    }
+}
+button:hover{
+    background-color: red;
+    color: black;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input{
+    border-style: dashed;
+    border-radius: 10px;
+    height: 50px;
+    width: 270px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body id="body">
+    <center><img src="data:image/jpeg;base64,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" alt=""></center>
+    <nav>
+        <button><a href="/home/yazeed/Desktop/Projects/websites/Story bookstore.com/index.html">Home</a></button>
+        <button>Stories</button>
+        <button>Animation</button>
+        <button>Movies</button>
+        <button>About</button>
+        <button>Contact</button>
+        <button>Donate!!</button>
+    </nav><br>
+    <i>search</i> <input type="search">
+    <button onclick="li()" id="li">LIGHT MODE</button>
+    <button onclick="mo()" id="mo">DARK MODE</button>
+    <script>
+        function li() {
+      document.getElementById("body").style.background = "white";
+      document.getElementById("body").style.color = "black";
+      document.getElementById("body").style.transition = "2s";
+        }
+        function mo() {
+            document.getElementById("body").style.background = "black";
+            document.getElementById("body").style.color = "white";
+            document.getElementById("body").style.transition = "2s";
+        }
+    </script><br><br><br>
+
+    <i>More Stories </i><select name="more stories" id="">
+        
+        <option value="">Three Wise Men</option>
+        <option value="">The Brave Woman</option>
+        <option value="">The young jesus</option>
+        <option value="">The stubborn goat</option>
+        <option value="">PROPHET Muhammad (S.W.A)</option>
+        <option value="">Lost kingdom</option>
+        <option value="">All is well</option>
+        <option value="">kingdom of far far away</option>
+    </select>
+    <br>
+    <h1>The drummer boy</h1>
+    <br>
+    <center><img src="/home/yazeed/Desktop/Projects/websites/Story bookstore.com/drummmer.jpeg" alt=""></center>
+
+    <p>
+
+    <b>I</b>n a small village nestled between the tall, swaying trees of West Africa, there lived a boy named Kofi. <br><br> Kofi was young, only twelve, but his heart beat with the rhythm of his ancestors. His grandfather, a revered elder and storyteller, had once told him that music was the language of the soul. For Kofi, this was not just a story—it was his truth. <br><br>
+
+    
+    Every morning, while the village stirred to life, Kofi could be found in the shade of a large baobab tree, drumming on an old, worn drum his father had passed down to him. The rhythm was simple at first: a steady *dun-dun* beat that echoed in the air, waking up the sleepy morning birds. But soon, as the sun rose higher, his hands would move faster, weaving intricate patterns of sound that spoke of the land’s deep history. <br><br>
+    <center><img src="/home/yazeed/Desktop/Projects/websites/Story bookstore.com/playing.jpeg" alt=""></center>
+    Kofi’s drum had a special power, his grandmother had once whispered to him. It was said that the drum could summon the spirits of the ancestors, guiding the village through both good times and bad. As he drummed, Kofi could feel the connection to the past, as if the spirits of warriors and healers, dancers and hunters, were speaking through him. <br><br>
+    
+    One day, as a fierce storm threatened the village, a stranger arrived. He was a tall man dressed in worn clothing, his eyes wild with fear. “The rains are coming, but the river is dry!” he cried. The people gathered, worried about the coming storm and the river that fed their crops, now mere cracks in the earth. <br><br>
+    
+    Kofi, sensing the urgency, went to the village center and set up his drum. The elders looked at him with concern, but Kofi knew what he must do. He sat down on the earth, closed his eyes, and let his hands meet the drum’s surface with a sound that was soft at first, like the gentle rustle of leaves in the wind. But then, he struck the drum with force, pulling from his soul the rhythm of the earth. His beats grew louder and faster, as if calling to the river itself. <br><br>
+    
+    As Kofi drummed, a strange stillness fell over the village. The wind stopped, the birds ceased their songs, and for a moment, even the storm seemed to pause. Then, from the distance, a low rumble echoed, and a faint sound of rushing water filled the air. The villagers looked toward the horizon, where they saw the river begin to flow once more, the dried bed turning into a shimmering stream. <br><br>
+    
+    Kofi’s drumming had done it. The rhythm of the earth, the sound of the ancestors, had awakened the river. The storm would pass, and the village would survive. <br><br>
+    
+    As the rain fell softly upon the land, the villagers gathered around Kofi, lifting him on their shoulders, honoring the boy who had called the spirits of the earth to dance. Kofi smiled humbly, knowing that it wasn’t just his hands that played the drum—it was the hearts of his people and the spirit of his ancestors that made the rhythm strong.
+    
+    From that day on, Kofi was known as the Drummer Boy of the village. He had learned, as his grandfather had taught him, that the beat of a drum could change the world.</p>
+</html>
